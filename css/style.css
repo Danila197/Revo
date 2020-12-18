@@ -438,7 +438,6 @@ body {
 }
 /*----------- -----------*/
 .giftset {
-  min-height: 100vh;
   background: -webkit-linear-gradient(90deg, rgb(237, 240, 245) 70%, rgb(242, 242, 242) 50%);
   background: -moz-linear-gradient(90deg, rgb(237, 240, 245) 70%, rgb(242, 242, 242) 50%);
   background: linear-gradient(90deg, rgb(237, 240, 245) 70%, rgb(242, 242, 242) 50%);
@@ -577,7 +576,6 @@ body {
 
 /*----------- -----------*/
 .combo {
-  min-height: 100vh;
   background: -webkit-linear-gradient(90deg, rgb(249, 245, 232) 77%, rgb(65, 81, 103) 50%);
   background: -moz-linear-gradient(90deg, rgb(249, 245, 232) 77%, rgb(65, 81, 103) 50%);
   background: linear-gradient(90deg, rgb(249, 245, 232) 77%, rgb(65, 81, 103) 50%);
@@ -593,7 +591,7 @@ body {
   /* display: flex; */
 }
 .combo-slider__wrapper {
-  display: flex;
+  display: flex !important;
 }
 .combo-slider__item {
   max-width: 360px;

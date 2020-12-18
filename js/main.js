@@ -22,13 +22,15 @@ $('.choose-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        rows:1,
       }
     },
     {
       breakpoint: 730,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll:1,
+        rows: 1,
       }
     },
     {
