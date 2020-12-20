@@ -13,6 +13,9 @@ li {
   margin: 0;
   list-style: none;
 }
+button{
+  outline:none;
+}
 h1,
 h2,
 h3,
@@ -511,7 +514,7 @@ body {
 .tabs__block-img {
   position: relative;
   width: 100%;
-  margin-right: -123px;
+  /*margin-right: -123px;*/
 }
 .tabs__block-img img {
   height: 100%;
@@ -519,7 +522,7 @@ body {
   object-fit: contain;
   top: 0;
   position: absolute;
-  left: -149px;
+  left: -132px;
 }
 .tabs__block-body {
   max-width: 794px;
