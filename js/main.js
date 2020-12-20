@@ -63,7 +63,7 @@ $(".burger-menu").on("click", function() {
 
 $(window).resize(function(e) {
   let width = e.target.innerWidth
-    if(width < 1000) {
+    if(width < 700) {
       $( ".top__logo-img" ).attr( "src", "./img/logo-w.png" );
    }else{
 	   $( ".top__logo-img" ).attr( "src", "./img/logo.png" );
