@@ -22,13 +22,15 @@ $('.choose-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        rows:1,
       }
     },
     {
       breakpoint: 730,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll:1,
+        rows: 1,
       }
     },
     {
@@ -51,7 +53,27 @@ $('.combo-slider').slick({
   // variableWidth: true,
   // centerPadding:'30%'
   // autoplay:true
+   responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 784,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 })
+const logo = document.querySelector('.top__logo')
 
 $(".burger-menu").on("click", function() {
   $(this).toggleClass("burger-menu--active");
@@ -63,9 +85,11 @@ $(".burger-menu").on("click", function() {
 
 $(window).resize(function(e) {
   let width = e.target.innerWidth
-    if(width < 700) {
-      $( ".top__logo-img" ).attr( "src", "./img/logo-w.png" );
-   }else{
-	   $( ".top__logo-img" ).attr( "src", "./img/logo.png" );
-   }
+  if (width < 700) {
+    // logo.innerHTML = '<img class="top__logo-img" src="./img/logo-w.png" alt="" />'
+    $(".top__logo-img").attr("src","./img/logo-w.png");
+  } else {
+    // logo.innerHTML = '<img class="top__logo-img" src="./img/logo.png" alt="" />'
+    $(".top__logo-img").attr("src","./img/logo.png");
+  }
 });
