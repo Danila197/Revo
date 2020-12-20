@@ -22,15 +22,13 @@ $('.choose-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        rows:1,
       }
     },
     {
       breakpoint: 730,
       settings: {
         slidesToShow: 1,
-        slidesToScroll:1,
-        rows: 1,
+        slidesToScroll: 1
       }
     },
     {
@@ -53,25 +51,6 @@ $('.combo-slider').slick({
   // variableWidth: true,
   // centerPadding:'30%'
   // autoplay:true
-   responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 784,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
 })
 
 $(".burger-menu").on("click", function() {
@@ -80,4 +59,13 @@ $(".burger-menu").on("click", function() {
   $('.slider').toggleClass('slider-active');
 
   $('body').toggleClass('lock')
+});
+
+$(window).resize(function(e) {
+  let width = e.target.innerWidth
+    if(width < 1000) {
+      $( ".top__logo-img" ).attr( "src", "./img/logo-w.png" );
+   }else{
+	   $( ".top__logo-img" ).attr( "src", "./img/logo.png" );
+   }
 });

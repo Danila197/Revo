@@ -14,7 +14,7 @@ li {
   list-style: none;
 }
 button{
-  outline:none;
+	outline:none;
 }
 h1,
 h2,
@@ -252,7 +252,8 @@ body {
 }
 .build-content {
   text-align: center;
-  margin-bottom: 72px;
+}
+.build-content__subtitle {
 }
 .subtitle {
   font-weight: 600;
@@ -260,6 +261,7 @@ body {
   line-height: 24px;
 }
 .build-content__title {
+  margin-bottom: 72px;
 }
 .title {
   text-transform: uppercase;
@@ -318,9 +320,10 @@ body {
 }
 .choose-content {
   text-align: center;
+}
+.choose-content__title {
   margin-bottom: 72px;
 }
-
 .choose-slider {
   position: relative;
   margin-left: 20px;
@@ -406,6 +409,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #415167;
+  outline:none;
 }
 .descr-block__link {
 }
@@ -441,6 +445,7 @@ body {
 }
 /*----------- -----------*/
 .giftset {
+  min-height: 100vh;
   background: -webkit-linear-gradient(90deg, rgb(237, 240, 245) 70%, rgb(242, 242, 242) 50%);
   background: -moz-linear-gradient(90deg, rgb(237, 240, 245) 70%, rgb(242, 242, 242) 50%);
   background: linear-gradient(90deg, rgb(237, 240, 245) 70%, rgb(242, 242, 242) 50%);
@@ -496,6 +501,7 @@ body {
   height: 33.33%;
   position: absolute;
   right: -88px;
+  /* z-index: -1; */
   background-color: #fff;
   border-left: 2px solid #edf0f5;
 }
@@ -514,7 +520,7 @@ body {
 .tabs__block-img {
   position: relative;
   width: 100%;
-  /*margin-right: -123px;*/
+  margin-right: -123px;
 }
 .tabs__block-img img {
   height: 100%;
@@ -522,10 +528,10 @@ body {
   object-fit: contain;
   top: 0;
   position: absolute;
-  left: -132px;
+  left: -149px;
 }
 .tabs__block-body {
-  max-width: 794px;
+  width: 794px;
 }
 .tabs__block-price {
   margin-bottom: 12px;
@@ -579,12 +585,13 @@ body {
 
 /*----------- -----------*/
 .combo {
+  min-height: 100vh;
   background: -webkit-linear-gradient(90deg, rgb(249, 245, 232) 77%, rgb(65, 81, 103) 50%);
   background: -moz-linear-gradient(90deg, rgb(249, 245, 232) 77%, rgb(65, 81, 103) 50%);
   background: linear-gradient(90deg, rgb(249, 245, 232) 77%, rgb(65, 81, 103) 50%);
+  padding: 87px 0 128px;
 }
 .combo-wrapper {
-  padding: 87px 0 128px;
 }
 .combo-content {
   text-align: center;
@@ -594,7 +601,7 @@ body {
   /* display: flex; */
 }
 .combo-slider__wrapper {
-  display: flex !important;
+  display: flex;
 }
 .combo-slider__item {
   max-width: 360px;
@@ -604,7 +611,7 @@ body {
 }
 .slider-item {
   box-shadow: 6px 6px 5px 0px rgba(205, 205, 205, 0.5);
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
 }
 .slider-item__img {
   background-color: #edf0f5;
